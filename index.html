@@ -3,12 +3,16 @@
     <head>
         <link rel="stylesheet" href="mystyle.css">
         <style>
-            h1{
-                color: orange;
+            body{
+                background-color: linen;
             }
         </style>
     </head>
-    <body>
+    <body style="background-color: lavender;">
+        <!-- Cascading order -->
+        <h1>Multiple styles will cascading into one</h1>
+        <p>Here, the background color of the page is set with inline CSS, and also with an internal CSS, and also with an external CSS.</p>
+        <p>Try experimenting by removing styles to see how the cascading stylesheets work (try removing the inline CSS first, the the internal, then the external).</p>
         <!-- Multiple style sheets -->
         <h1>This is a heading</h1>
         <p>The style of this document is a combination of an external stylesheet, and internal style.</p>
