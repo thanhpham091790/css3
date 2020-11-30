@@ -38,7 +38,6 @@
                 border-style: solid;
                 border-right-width: 15px;
             }
-            */
             p{
                 border-style: solid;
             }
@@ -72,10 +71,32 @@
             p.hidden{
                 border-right-style: hidden;
             }
-            
+            */
+            p.one{
+                border-style: solid;
+                border-color: #0000ff;
+            }
+            p.two{
+                border-style: solid;
+                border-color: #ff0000 #0000ff;
+            }
+            p.three{
+                border-style: solid;
+                border-color: #ff0000 #00ff00 #0000ff;
+            }
+            p.four{
+                border-style: solid;
+                border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 250);
+            }
         </style>
     </head>
     <body>
+        <!-- Set the color of the four borders -->
+        <p class="one">One-colored border!</p>
+        <p class="two">Two-colored border!</p>
+        <p class="three">Three-colored border!</p>
+        <p class="four">Four-colored border!</p>
+        <p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
         <!-- Set the style of the right border -->
         <!-- Set the style of the left border -->
         <!-- Set the style of the bottom border -->
