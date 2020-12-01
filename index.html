@@ -20,23 +20,38 @@
             p.outset{outline-style: outset;}
 
             p.ex1{
-                border: 2px solid black;
+                /* border: 2px solid black;
                 outline-style: solid;
                 outline-color: invert;
+                outline-width: thin; */
+                outline: dashed;
             }
             p.ex2{
-                border: 2px solid black;
+                /* border: 2px solid black;
                 outline-style: dotted;
                 outline-color: blue;
+                outline-width: medium; */
+                outline: dotted red;
             }
             p.ex3{
-                border: 2px solid black;
+                /* border: 2px solid black;
                 outline-style: outset;
                 outline-color: gray;
+                outline-width: thick; */
+                outline: 5px solid yellow;
+            }
+            p.ex4{
+                outline: thick ridge pink;
             }
         </style>
     </head>
     <body>
+        <!-- Use the shorthand outline property -->
+        <h2>The outline Property</h2>
+        <p class="ex1">A dashed outline.</p>
+        <p class="ex2">A dotted red outline.</p>
+        <p class="ex3">A 5px solid yellow outline.</p>
+        <p class="ex4">A thick ridge pink outline.</p>
         <!-- Use outline-color: invert on an outline -->
         <h2>Using outline-color:invert</h2>
         <p class="ex1">A solid invert outline.</p>
