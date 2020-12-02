@@ -43,32 +43,59 @@
         p {
             text-indent: 50px;
         }
-        */
-        h1{
+        h1 {
             letter-spacing: 3px;
         }
-        h2{
+
+        h2 {
             letter-spacing: -3px;
+        }
+        */
+        p.small{
+            line-height: 0.7;
+        }
+        p.big{
+            line-height: 1.8;
         }
     </style>
 </head>
 
 <body>
+    <!-- Specify the space between lines -->
+    <p>
+        This is a paragraph with a standard line-height.<br>
+        The default line height in most browsers is about 110% to 120%.<br>
+    </p>
+
+    <p class="small">
+        This is a paragraph with a smaller line-height.<br>
+        This is a paragraph with a smaller line-height.<br>
+    </p>
+
+    <p class="big">
+        This is a paragraph with a bigger line-height.<br>
+        This is a paragraph with a bigger line-height.<br>
+    </p>
+
     <!-- Specify the space between characters -->
     <h1>This is heading 1</h1>
     <h2>This is heading 2</h2>
+
     <!-- Indent text -->
     <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever
         since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world
         haven't had the advantages that you've had.'</p>
+
     <!-- Control the letters in a text -->
     <p class="uppercase">This is some text.</p>
     <p class="lowercase">This is some text.</p>
     <p class="capitalize">This is some text.</p>
+
     <!-- Decoration a text -->
     <h1>This is heading 1</h1>
     <h2>This is heading 2</h2>
     <h3>This is heading 3</h3>
+
     <!-- Remove the line under link -->
     <p>A link with no underline: <a href="https://www.w3schools.com">W3Schools.com</a></p>
 
