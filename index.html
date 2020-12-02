@@ -69,14 +69,50 @@
         h2 {
             word-spacing: -5px;
         }
-        */
-        h1{
+        h1 {
             text-shadow: 3px 2px red;
+        }
+        p {
+            white-space: nowrap;
+        }
+        */
+        img.top{
+            vertical-align: top;
+        }
+        img.middle{
+            vertical-align: middle;
+        }
+        img.bottom{
+            vertical-align: bottom;
         }
     </style>
 </head>
 
 <body>
+    <!-- Vertical alignment of an image inside text -->
+    <p>An <img src="https://www.w3schools.com/css/w3schools_logo.gif" alt="W3Schools" width="270" height="50"> image with a default alignment.</p><br>
+
+    <p>An <img class="top" src="https://www.w3schools.com/css/w3schools_logo.gif" alt="W3Schools" width="270" height="50"> image with a top alignment.
+    </p><br>
+
+    <p>An <img class="middle" src="https://www.w3schools.com/css/w3schools_logo.gif" alt="W3Schools" width="270" height="50"> image with a middle
+        alignment.</p><br>
+
+    <p>An <img class="bottom" src="https://www.w3schools.com/css/w3schools_logo.gif" alt="W3Schools" width="270" height="50"> image with a bottom
+        alignment.</p>
+
+    <!-- Disable text wrapping inside an element -->
+    <h2>White Space</h2>
+
+    <p>
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </p>
+
+    <p>Try to remove the white-space property to see the difference.</p>
     <!-- Specify a text shadow for an element -->
     <h1>Text-shadow effect</h1>
     <p><b>Note:</b> Internet Explorer 9 and earlier do not support the text-shadow property.</p>
