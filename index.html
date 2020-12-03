@@ -13,26 +13,73 @@
             border-collapse: collapse;
             border: 1px solid black;
         }
-        */
-        table,td,th{
+        table,
+        td,
+        th {
             border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            height: 70px;
+            text-align: right;
+        }
+
+        td {
+            height: 50px;
+            vertical-align: middle;
+        }
+        */
+        table, th, td{
+            border: 1px solid #ddd;
+            text-align: left;
         }
         table{
             border-collapse: collapse;
             width: 100%;
         }
-        th{
-            height: 70px;
-            text-align: right;
-        }
-        td{
-            height: 50px;
-            vertical-align: middle;
+        th, td{
+            padding: 15px;
         }
     </style>
 </head>
 
 <body>
+    <!-- Specify the padding for th and td elements -->
+    <h2>The padding Property</h2>
+    <p>This property adds space between the border and the content in a table.</p>
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
     <!-- Set the vertical alignment of content (vertical-align) -->
     <!-- Set the horizontal alignment of content (text-align) -->
     <!-- Specify the width and height of a table -->
