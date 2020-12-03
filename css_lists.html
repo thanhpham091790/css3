@@ -109,29 +109,51 @@
         ul {
             list-style: square inside url("https://www.w3schools.com/css/sqpurple.gif");
         }
-        */
-        ol{
+        ol {
             background: #ff9999;
             padding: 20px;
         }
-        ol li{
+
+        ol li {
             background: #ffe5e5;
             padding: 5px;
             margin-left: 35px;
         }
-        ul{
+
+        ul {
             background: #3399ff;
             padding: 20px;
         }
-        ul li{
+
+        ul li {
             background: #cce5ff;
             margin: 5px;
             margin-left: 35px;
+        }
+        */
+        ul{
+            list-style-type: none;
+            padding: 0;
+            border: 1px solid #ddd;
+        }
+        ul li{
+            padding: 8px 16px;
+            border-bottom: 1px solid #ddd;
+        }
+        ul li:last-child{
+            border-bottom: none;
         }
     </style>
 </head>
 
 <body>
+    <!-- Full width bordered list -->
+    <p>Full-width bordered list:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
     <!-- Style lists with colors -->
     <h1>Styling Lists With Colors:</h1>
 
