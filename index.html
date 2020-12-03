@@ -4,34 +4,34 @@
 <head>
     <style>
         /* Unvisited link */
-        a:link {
+        /* a:link {
             color: red;
             text-decoration: none;
             background-color: yellow;
-        }
+        } */
 
         /* Visited link */
-        a:visited {
+        /* a:visited {
             text-decoration: none;
             color: green;
             background-color: cyan;
-        }
+        } */
 
         /* Mouse over link */
-        a:hover {
+        /* a:hover {
             text-decoration: underline;
             color: hotpink;
             background-color: lightgreen;
-        }
+        } */
 
         /* Selected link */
-        a:active {
+        /* a:active {
             text-decoration: underline;
             color: blue;
             background-color: hotpink;
-        }
+        } */
 
-        a.one:link {
+        /* a.one:link {
             color: #ff0000;
         }
 
@@ -91,11 +91,28 @@
 
         a.five:hover {
             text-decoration: underline;
+        } */
+
+        a:link, a:visited{
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active{
+            background-color: red;
         }
     </style>
 </head>
 
 <body>
+    <!-- Advanced - Create link boxes -->
+    <h2>Link Button</h2>
+    <p>A link styled as a button:</p>
+    <a href="default.asp" target="_blank">This is a link</a>
     <!-- Different types of cursors -->
     <p>Mouse over the words to change the cursor.</p>
     <span style="cursor:auto">auto</span><br>
