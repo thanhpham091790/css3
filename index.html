@@ -93,7 +93,6 @@
         ul {
             list-style-image: url("https://www.w3schools.com/css/sqpurple.gif");
         }
-        */
         ul.a {
             list-style-position: outside;
         }
@@ -101,15 +100,30 @@
         ul.b {
             list-style-position: inside;
         }
-        ul.demo{
+
+        ul.demo {
             list-style-type: none;
             margin: 0;
             padding: 0;
+        }
+        */
+        ul{
+            list-style: square inside url("https://www.w3schools.com/css/sqpurple.gif");
         }
     </style>
 </head>
 
 <body>
+    <!-- All list properties in one declaration -->
+    <h2>CSS Lists</h2>
+    <p>The list-style property is a shorthand property, which is used to set all the list properties in one declaration.
+    </p>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
     <!-- Remove default list settings -->
     <p>Default list:</p>
     <ul>
