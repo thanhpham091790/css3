@@ -16,18 +16,53 @@
             border: 1px solid black;
             text-align: center;
         }
-        */
-        span{
+        span {
             float: left;
             width: 0.7em;
             font-size: 400%;
             font-family: algerian, courier;
             line-height: 80%;
         }
+        */
+        .div1{
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 3px solid #73ad21;
+        }
+        .div2{
+            border: 1px solid red;
+        }
+        h2{
+            clear: left;
+        }
+        .div3{
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 3px solid #73ad21;
+        }
+        .div4{
+            border: 1px solid red;
+            clear: left;
+        }
     </style>
 </head>
 
 <body>
+    <!-- Turn off float (using the clear property) -->
+    <h2>Without clear</h2>
+    <div class="div1">div1</div>
+    <div class="div2">div2 - Notice that the div2 element is after div1, in the HTML code. However, since div1 is
+        floated to the left, this happens: the text in div2 is floated around div1, and div2 surrounds the whole thing.
+    </div>
+
+    <h2>Using clear</h2>
+    <div class="div3">div3</div>
+    <div class="div4">div4 - Using clear moves div4 down below the floated div3. The value "left" clears elements
+        floated to the left. You can also clear "right" and "both".</div>
     <!-- Let the first letter of a paragraph float to the left -->
     <p>
         <span>T</span>his is some text.
