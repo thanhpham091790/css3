@@ -66,14 +66,29 @@
         .img2{
             float: right;
         }
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            float: left;
+            width: 33.33%;
+            padding: 50px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
         */
         *{
             box-sizing: border-box;
         }
-        .box{
+        .img-container{
             float: left;
             width: 33.33%;
-            padding: 50px;
+            padding: 5px;
         }
         .clearfix::after{
             content: "";
@@ -84,6 +99,26 @@
 </head>
 
 <body>
+    <!-- Create side by side images -->
+    <h2>Images Side by Side</h2>
+    <p>Float images side by side:</p>
+
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Italy" style="width:100%">
+        </div>
+        <div class="img-container">
+            <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="img-container">
+            <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Mountains" style="width:100%">
+        </div>
+    </div>
+
+    <p>Note that we also use the clearfix hack to take care of the layout flow, and that we add the box-sizing property
+        to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the
+        effect.</p>
+
     <!-- Create floating boxes -->
     <h2>Grid of Boxes</h2>
     <p>Float boxes side by side:</p>
