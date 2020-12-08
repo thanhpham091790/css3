@@ -29,24 +29,49 @@
         div.third {
             opacity: 0.6;
         }
-        */
-        div{
-            background: rgb(76,175,80);
+        div {
+            background: rgb(76, 175, 80);
             padding: 10px;
         }
-        div.first{
-            background: rgba(76,175,80,0.1);
+
+        div.first {
+            background: rgba(76, 175, 80, 0.1);
         }
-        div.second{
-            background: rgba(76,175,80,0.3);
+
+        div.second {
+            background: rgba(76, 175, 80, 0.3);
         }
-        div.third{
-            background: rgba(76,175,80,0.6);
+
+        div.third {
+            background: rgba(76, 175, 80, 0.6);
+        }
+        */
+        div.background{
+            background: url(https://www.w3schools.com/css/klematis.jpg) repeat;
+            border: 2px soild black;
+            overflow: hidden;
+        }
+        div.transbox{
+            margin: 30px;
+            background-color: #fff;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+        div.transbox p{
+            margin: 5%;
+            font-weight: bold;
+            color: black;
         }
     </style>
 </head>
 
 <body>
+    <!-- Creating a transparent box with text on a background image -->
+    <div class="background">
+        <div class="transbox">
+            <p>This is some text that is placed in the transparent box.</p>
+        </div>
+    </div>
     <!-- Transperant box/div with RGBA values -->
     <h1>Transparent Box</h1>
     <p>With opacity:</p>
