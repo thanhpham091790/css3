@@ -85,14 +85,20 @@
         P:first-child {
             color: blue;
         }
+        p i:first-child {
+            color: blue;
+        }
         */
-        p i:first-child{
+        p:first-child i{
             color: blue;
         }
     </style>
 </head>
 
 <body>
+    <!-- :first-child - match all i elements in all first child p elements -->
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
     <!-- :first-child - match the first i element in all p elements -->
     <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
     <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
