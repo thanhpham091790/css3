@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            p::first-letter{
-                color: red;
-                font-size: xx-large;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Make the first letter special in a text -->
-        <p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
-    </body>
+
+<head>
+    <style>
+        /* p::first-letter {
+            color: red;
+            font-size: xx-large;
+        } 
+        */
+        p::first-line{
+            color: red;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Make the first line special in a text -->
+    <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text.
+        And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and
+        more, and more.</p>
+    <!-- Make the first letter special in a text -->
+    <p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+</body>
+
 </html>
