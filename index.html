@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <style>
@@ -20,10 +20,15 @@
             counter-increment: subsection;
             content: counter(section) "." counter(subsection) " ";
         }
+        q:lang(en){
+            quotes: "<<" ">>" "'" "'";
+        }
     </style>
 </head>
 
 <body>
+    <!-- Specify the quotation marks with the quotes property -->
+    <p><q>This is a <q>big</q> quote.</q></p>
     <!-- Numbering sections and sub-sections with "Section 1", "1.1", "1.2", etc -->
     <h1>HTML tutorials</h1>
     <h2>HTML Tutorial</h2>
