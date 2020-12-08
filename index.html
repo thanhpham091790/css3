@@ -11,19 +11,28 @@
             color: red;
             font-variant: small-caps;
         }
-        */
-        p::first-line{
+        p::first-line {
             color: blue;
             font-variant: small-caps;
         }
-        p::first-letter{
+
+        p::first-letter {
             color: red;
             font-size: xx-large;
+        }
+        */
+        h1::before{
+            content: url(https://www.w3schools.com/css/smiley.gif);
         }
     </style>
 </head>
 
 <body>
+    <!-- Use :before to insert some content before an element -->
+    <h1>This is a heading</h1>
+    <p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+    <h1>This is a heading</h1>
     <!-- Make the first letter and first line special -->
     <p>You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter
         and the first line of a text!</p>
