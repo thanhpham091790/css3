@@ -16,17 +16,45 @@
             margin-left: auto;
             margin-right: auto;
         }
-        .right{
+
+        /* 
+        .right {
             position: absolute;
             right: 0px;
             width: 300px;
             border: 3px solid green;
             padding: 10px;
+        } 
+        */
+        body{
+            margin: 0;
+            padding: 0;
         }
+        .container{
+            position: relative;
+            width: 100%;
+        }
+        .right{
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            background-color: lightblue;
+        }
+
     </style>
 </head>
 
 <body>
+    
+    <!-- Left/Right aligning with position - Crossbrowser solution -->
+    <h2>Right Align</h2>
+
+    <div class="container">
+        <div class="right">
+            <p><b>Note:</b> When aligning using the position property, always include the !DOCTYPE declaration! If
+                missing, it can produce strange results in IE browsers.</p>
+        </div>
+    </div>
     <!-- Left/right aligning with position -->
     <h2>Right Align</h2>
     <p>An example of how to right align elements with the position property:</p>
