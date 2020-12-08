@@ -64,17 +64,56 @@
             width: 300px;
             background-color: lightblue;
         }
-        */
-        .center{
+        .center {
             padding: 70px 0;
             border: 3px solid green;
             text-align: center;
+        }
+        .center {
+            line-height: 200px;
+            height: 200px;
+            border: 3px solid green;
+            text-align: center;
+        }
+
+        .center p {
+            line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        */
+        .center{
+            height: 200px;
+            position: relative;
+            border: 3px solid green;
+        }
+        .center p{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
     </style>
 </head>
 
 <body>
-    
+    <!-- Center vertically and horizontall with position -->
+    <h2>Centering</h2>
+    <p>In this example, we use positioning and the transform property to vertically and horizontally center the div
+        element:</p>
+
+    <div class="center">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+    <!-- Center vertically with line-height -->
+    <h2>Centering</h2>
+    <p>In this example, we use the line-height property with a value that is equal to the height property to center the
+        div element:</p>
+
+    <div class="center">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
     <!-- Center vertically and horizontally -->
     <!-- Center vertically with padding -->
     <h2>Center Vertically</h2>
