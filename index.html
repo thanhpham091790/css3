@@ -9,14 +9,31 @@
         div>p {
             background-color: yellow;
         }
+        div+p {
+            background-color: yellow;
+        }
         */
-        div + p{
+        div ~ p{
             background-color: yellow;
         }
     </style>
 </head>
 
 <body>
+    <!-- General sibling selector -->
+    <h2>General Sibling Selector</h2>
+    <p>The general sibling selector (~) selects all elements that are siblings of a specified element.</p>
+
+    <p>Paragraph 1.</p>
+
+    <div>
+        <p>Paragraph 2.</p>
+    </div>
+
+    <p>Paragraph 3.</p>
+    <code>Some code.</code>
+    <p>Paragraph 4.</p>
+
     <!-- Adjacent Sibling selector -->
     <h2>Adjacent Sibling Selector</h2>
 
