@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            a::after{
-                content: " (" attr(href) ")";
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Insert the URL in parentthesis after each link with the content property -->
-        <p><a href="https://www.w3schools.com">W3Schools</a> contains free tutorials and references.</p>
-    </body>
+
+<head>
+    <style>
+        a::after {
+            content: " ("attr(href) ")";
+        }
+        body{
+            counter-reset: section;
+        }
+        h1{
+            counter-reset: subsection;
+        }
+        h1::before{
+            counter-increment: section;
+            content: "Section " counter(section) ". ";
+        }
+        h2::before{
+            counter-increment: subsection;
+            content: counter(section) "." counter(subsection) " ";
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Numbering sections and sub-sections with "Section 1", "1.1", "1.2", etc -->
+    <h1>HTML tutorials</h1>
+    <h2>HTML Tutorial</h2>
+    <h2>XHTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+
+    <h1>Scripting tutorials</h1>
+    <h2>JavaScript</h2>
+    <h2>JQuery</h2>
+
+    <h1>XML tutorials</h1>
+    <h2>XML</h2>
+    <h2>XSL</h2>
+
+    <!-- Insert the URL in parentthesis after each link with the content property -->
+    <p><a href="https://www.w3schools.com">W3Schools</a> contains free tutorials and references.</p>
+</body>
+
 </html>
