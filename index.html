@@ -36,11 +36,11 @@
             clear: both;
             display: table;
         } 
-        */
-        body{
+        body {
             margin: 0;
         }
-        ul{
+
+        ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -50,25 +50,93 @@
             height: 100%;
             overflow: auto;
         }
-        li a{
+
+        li a {
             display: block;
             color: #000;
             padding: 8px 16px;
             text-decoration: none;
         }
-        li a.active{
+
+        li a.active {
             background-color: #4caf50;
             color: white;
         }
-        li a:hover:not(.active){
+
+        li a:hover:not(.active) {
             background-color: #555;
             color: white;
+        }
+        */
+        body{
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active){
+            background-color: #111;
+        }
+        li a.active{
+            background-color: #4caf50;
         }
     </style>
 </head>
 
 <body>
-    <!-- Full-height fixed  vertical navigation bar -->
+    <!-- Fixed horizontal navigation bar -->
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+        <h1>Fixed Top Navigation Bar</h1>
+        <h2>Scroll this page to see the effect</h2>
+        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+    </div>
+
+    <!-- Full-height fixed vertical navigation bar -->
     <ul>
         <li><a class="active" href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
