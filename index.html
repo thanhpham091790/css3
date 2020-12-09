@@ -3,16 +3,27 @@
 
 <head>
     <style>
-        a[target]{
+        a[target] {
             background-color: yellow;
         }
-        a[target=_blank]{
+
+        a[target=_blank] {
             background-color: lightblue;
+        }
+        img[title~=flower]{
+            border: 5px solid yellow;
         }
     </style>
 </head>
 
 <body>
+    <!-- Selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower" -->
+    <h2>CSS [attribute~="value"] Selector</h2>
+    <p>All images with the title attribute containing the word "flower" get a yellow border.</p>
+
+    <img src="https://www.w3schools.com/css/klematis.jpg" title="klematis flower" width="150" height="113">
+    <img src="https://www.w3schools.com/css/img_flwr.gif" title="flower" width="224" height="162">
+    <img src="https://www.w3schools.com/css/img_tree.gif" title="tree" width="200" height="358">
     <!-- Selects all <a> elements with a target="_blank" attribute -->
     <!-- Selects all <a> elements with a target attribute -->
     <h2>CSS [attribute] Selector</h2>
