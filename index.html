@@ -53,7 +53,7 @@
             padding: 12px 20px 12px 40px;
         }
         */
-        input[type=text]{
+        input[type=text] {
             width: 130px;
             box-sizing: border-box;
             border: 2px solid #ccc;
@@ -66,13 +66,33 @@
             padding: 12px 20px 12px 40px;
             transition: width 0.4s ease-in-out;
         }
-        input[type=text]:focus{
+
+        input[type=text]:focus {
             width: 260px;
+        }
+        textarea{
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
         }
     </style>
 </head>
 
 <body>
+    <!-- Style textareas -->
+    <p><strong>Tip:</strong> Use the resize property to prevent textareas from being resized (disable the "grabber" in
+        the bottom right corner):</p>
+
+    <form>
+        <textarea>Some text...</textarea>
+    </form>
+
     <!-- Animated search input -->
     <p>Animated search input:</p>
 
