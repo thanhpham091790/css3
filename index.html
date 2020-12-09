@@ -14,48 +14,65 @@
             background: url(https://www.w3schools.com/css/img_navsprites.gif) -91px 0;
         } 
         */
-        #navlist{
+        #navlist {
             position: relative;
         }
-        #navlist li{
+
+        #navlist li {
             margin: 0;
             padding: 0;
             list-style: none;
             position: absolute;
             top: 0;
         }
-        #navlist li, #navlist a{
+
+        #navlist li,
+        #navlist a {
             height: 44px;
             display: block;
         }
-        #home{
+
+        #home {
             left: 0;
             width: 46px;
-            background: url("https://www.w3schools.com/css/img_navsprites.gif") 0 0;
-        }
-        
-        #prev{
-            left: 63px;
-            width: 43px;
-            background: url("https://www.w3schools.com/css/img_navsprites.gif") -47px 0;
-        }
-        #next{
-            left: 129px;
-            width: 43px;
-            background: url("https://www.w3schools.com/css/img_navsprites.gif") -91px 0;
+            background: url("https://www.w3schools.com/css/img_navsprites_hover.gif") 0 0;
         }
 
+        #prev {
+            left: 63px;
+            width: 43px;
+            background: url("https://www.w3schools.com/css/img_navsprites_hover.gif") -47px 0;
+        }
+
+        #next {
+            left: 129px;
+            width: 43px;
+            background: url("https://www.w3schools.com/css/img_navsprites_hover.gif") -91px 0;
+        }
+
+        #home a:hover {
+            background: url('https://www.w3schools.com/css/img_navsprites_hover.gif') 0 -45px;
+        }
+
+        #prev a:hover {
+            background: url('https://www.w3schools.com/css/img_navsprites_hover.gif') -47px -45px;
+        }
+
+        #next a:hover {
+            background: url('https://www.w3schools.com/css/img_navsprites_hover.gif') -91px -45px;
+        }
     </style>
 </head>
 
 <body>
+    <!-- An image sprite with hover effect -->
     <!-- An image sprite - a navigation list -->
     <ul id="navlist">
         <li id="home"><a href="default.asp"></a></li>
         <li id="prev"><a href="css_intro.asp"></a></li>
         <li id="next"><a href="css_syntax.asp"></a></li>
-      </ul>
-      
+    </ul>
+
     <!-- An image sprite -->
     <!-- <img id="home" src="https://www.w3schools.com/css/img_trans.gif" width="1" height="1">
     <img id="next" src="https://www.w3schools.com/css/img_trans.gif" width="1" height="1"> -->
