@@ -14,16 +14,28 @@
         img[title~=flower] {
             border: 5px solid yellow;
         }
-        [class|=top]{
+
+        [class|=top] {
             background: yellow;
         }
-        [class^="top"]{
+
+        [class^="top"] {
             background: lightblue;
+        }
+        [class$="test"]{
+            background: red;
         }
     </style>
 </head>
 
 <body>
+    <!-- Selects all elements with a class attribute value that ends with "test" -->
+    <h2>CSS [attribute$="value"] Selector</h2>
+
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
     <!-- Selects all elements with a class attribute value that begins with "top" (must not be whole word) -->
     <!-- Selects all elements with a class attribute value that begins with "top" (must be whole word) -->
     <h2>CSS [attribute|="value"] Selector</h2>
