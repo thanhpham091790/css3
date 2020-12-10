@@ -62,38 +62,44 @@
             height: 200px;
             background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
         }
-        */
         #grad1 {
             height: 200px;
             background-color: red;
-            /* For browsers that do not support gradients */
             background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
         }
 
         #grad2 {
             height: 200px;
             background-color: red;
-            /* For browsers that do not support gradients */
             background-image: repeating-linear-gradient(45deg, red, yellow 7%, green 10%);
         }
 
         #grad3 {
             height: 200px;
             background-color: red;
-            /* For browsers that do not support gradients */
             background-image: repeating-linear-gradient(190deg, red, yellow 7%, green 10%);
         }
 
         #grad4 {
             height: 200px;
             background-color: red;
-            /* For browsers that do not support gradients */
             background-image: repeating-linear-gradient(90deg, red, yellow 7%, green 10%);
+        }
+        */
+        #grad1 {
+            height: 150px;
+            width: 200px;
+            background-color: red;
+            background-image: radial-gradient(red, yellow, green);
         }
     </style>
 </head>
 
 <body>
+    <!-- Radial gradient - evenly spaced color stops -->
+    <h1>Radial Gradient - Evenly Spaced Color Stops</h1>
+
+    <div id="grad1"></div>
     <!-- Linear gradient - a repeating linear gradient -->
     <h1>Repeating Linear Gradient</h1>
 
