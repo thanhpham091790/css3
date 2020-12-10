@@ -3,25 +3,56 @@
 
 <head>
     <style>
-        #rcorners1{
+        /* #rcorners1 {
             border-radius: 25px;
             background: #73ad21;
             padding: 20px;
             width: 200px;
             height: 150px;
         }
-        #rcorners2{
+
+        #rcorners2 {
             border-radius: 25px;
             border: 1px solid #73ad21;
             padding: 20px;
             width: 200px;
             height: 150px;
         }
-        #rcorners3{
+
+        #rcorners3 {
             border-radius: 25px;
             background: url("https://www.w3schools.com/css/paper.gif");
             background-position: left top;
             background-repeat: repeat;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        } 
+        */
+        #rcorners1{
+            border-radius: 15px 50px 30px 5px;
+            background: #73ad21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+        #rcorners2{
+            border-radius: 15px 50px 30px;
+            background: #73ad21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+        #rcorners3{
+            border-radius: 15px 50px;
+            background: #73ad21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+        #rcorners4{
+            border-radius: 15px;
+            background: #73ad21;
             padding: 20px;
             width: 200px;
             height: 150px;
@@ -30,6 +61,21 @@
 </head>
 
 <body>
+    <!-- Round each corner separately -->
+    <h1>The border-radius Property</h1>
+
+    <p>Four values - border-radius: 15px 50px 30px 5px:</p>
+    <p id="rcorners1"></p>
+
+    <p>Three values - border-radius: 15px 50px 30px:</p>
+    <p id="rcorners2"></p>
+
+    <p>Two values - border-radius: 15px 50px:</p>
+    <p id="rcorners3"></p>
+
+    <p>One value - border-radius: 15px:</p>
+    <p id="rcorners4"></p>
+
     <!-- Add rounded corners to elements -->
     <h1>The border-radius Property</h1>
 
