@@ -24,7 +24,8 @@
             background-repeat: no-repeat;
             padding: 15px;
         }
-        .div1{
+
+        .div1 {
             border: 1px solid black;
             height: 120px;
             width: 150px;
@@ -32,7 +33,8 @@
             background-repeat: no-repeat;
             background-size: contain;
         }
-        .div2{
+
+        .div2 {
             border: 1px solid black;
             height: 120px;
             width: 150px;
@@ -40,17 +42,41 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .div3{
+
+        .div3 {
             border: 1px solid black;
             height: 120px;
             width: 150px;
             background: url("https://www.w3schools.com/css/img_flwr.gif");
             background-repeat: no-repeat;
         }
+
+        #example1 {
+            background: url("https://www.w3schools.com/css/img_tree.gif") left top no-repeat, url("https://www.w3schools.com/css/img_flwr.gif") right bottom no-repeat, url("https://www.w3schools.com/css/paper.gif") left top repeat;
+            padding: 15px;
+            background-size: 50px, 130px, auto;
+        }
+        html{
+            background: url("https://www.w3schools.com/css/img_man.jpg") no-repeat center fixed;
+            background-size: cover;
+        }
     </style>
 </head>
 
 <body>
+    <!-- Full-size background image (completely fill the content area) -->
+    <h1>Full Page Background Image</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    <!-- Define size of multiple background images -->
+    <div id="example1">
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
     <!-- Scale a background image using "contain" and "cover" -->
     <h1>The background-size Property</h1>
 
