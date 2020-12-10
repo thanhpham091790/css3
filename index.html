@@ -104,12 +104,10 @@
             background-color: red;
             background-image: radial-gradient(circle, red, yellow, green);
         }
-        */
         #grad1 {
             height: 150px;
             width: 150px;
             background-color: red;
-            /* For browsers that do not support gradients */
             background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
         }
 
@@ -117,7 +115,6 @@
             height: 150px;
             width: 150px;
             background-color: red;
-            /* For browsers that do not support gradients */
             background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
         }
 
@@ -125,7 +122,6 @@
             height: 150px;
             width: 150px;
             background-color: red;
-            /* For browsers that do not support gradients */
             background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
         }
 
@@ -133,13 +129,24 @@
             height: 150px;
             width: 150px;
             background-color: red;
-            /* For browsers that do not support gradients */
             background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+        }
+        */
+        #grad1 {
+            height: 150px;
+            width: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
         }
     </style>
 </head>
 
 <body>
+    <!-- Radial gradient - a repeating radial gradient -->
+    <h1>Repeating Radial Gradient</h1>
+
+    <div id="grad1"></div>
     <!-- Radial gradient - different size keyword -->
     <h1>Radial Gradients - Different size keywords</h1>
 
