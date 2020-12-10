@@ -3,15 +3,42 @@
 
 <head>
     <style>
-        #borderimg{
+        #borderimg {
             border: 10px solid transparent;
             padding: 15px;
             border-image: url("https://www.w3schools.com/css/border.png") 30 stretch;
+        }
+
+        #borderimg1 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(https://www.w3schools.com/css/border.png) 30 round;
+        }
+
+        #borderimg2 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(https://www.w3schools.com/css/border.png) 20% round;
+        }
+
+        #borderimg3 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(https://www.w3schools.com/css/border.png) 30% round;
         }
     </style>
 </head>
 
 <body>
+    <!-- Image border - Different slice values -->
+    <h1>The border-image Property</h1>
+
+    <p id="borderimg1">border-image: url(border.png) 50 round;</p>
+    <p id="borderimg2">border-image: url(border.png) 20% round;</p>
+    <p id="borderimg3">border-image: url(border.png) 30% round;</p>
+
+    <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+
     <!-- Create an image border around an element, using the stretch keyword -->
     <!-- Create an image border around an element, using the round keyword -->
     <h1>The border-image Property</h1>
