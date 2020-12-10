@@ -14,15 +14,37 @@
             background-image: linear-gradient(to right,red, yellow);
         }
         */
-        #grad1{
+        #grad1 {
             height: 200px;
             background-color: red;
-            background-image: linear-gradient(to bottom right,red, yellow);
+            background-image: linear-gradient(0deg, #ff0000, #ffff00);
+        }
+        #grad2 {
+            height: 200px;
+            background-color: red;
+            background-image: linear-gradient(90deg, #ff0000, #ffff00);
+        }
+        #grad3 {
+            height: 200px;
+            background-color: red;
+            background-image: linear-gradient(180deg, #ff0000, #ffff00);
+        }
+        #grad4 {
+            height: 200px;
+            background-color: red;
+            background-image: linear-gradient(-90deg, #ff0000, #ffff00);
         }
     </style>
 </head>
 
 <body>
+    <!-- Linear gradient - with a specified angle -->
+    <h1>Linear Gradients - Using Different Angles</h1>
+
+    <div id="grad1" style="text-align:center;">0deg</div><br>
+    <div id="grad2" style="text-align:center;">90deg</div><br>
+    <div id="grad3" style="text-align:center;">180deg</div><br>
+    <div id="grad4" style="text-align:center;">-90deg</div>
     <!-- Linear gradient - diagonal -->
     <!-- Linear gradient - left to right -->
     <!-- Linear gradient - top to bottom -->
