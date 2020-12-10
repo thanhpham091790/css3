@@ -3,16 +3,51 @@
 
 <head>
     <style>
-        #example1{
+        /* #example1 {
             background-image: url("https://www.w3schools.com/css/img_flwr.gif"), url("https://www.w3schools.com/css/paper.gif");
             background-position: right bottom, left top;
             background-repeat: no-repeat, repeat;
+            padding: 15px;
+        } 
+        */
+        #example1{
+            border: 1px solid black;
+            background: url("https://www.w3schools.com/css/img_flwr.gif");
+            background-size: 100px 80px;
+            background-repeat: no-repeat;
+            padding: 15px;
+        }
+        #example2{
+            border: 1px solid black;
+            background: url("https://www.w3schools.com/css/img_flwr.gif");
+            background-repeat: no-repeat;
             padding: 15px;
         }
     </style>
 </head>
 
 <body>
+    <!-- Specify the size of a background image -->
+    <h1>The background-size Property</h1>
+
+    <p>Resized background-image:</p>
+    <div id="example1">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+
+    <p>Original size of the background-image:</p>
+    <div id="example2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+
     <!-- Add multiple background images for an element -->
     <h1>Multiple Backgrounds</h1>
     <p>The following div element has two background images:</p>
