@@ -13,31 +13,61 @@
             background-color: red;
             background-image: linear-gradient(to right,red, yellow);
         }
-        */
         #grad1 {
             height: 200px;
             background-color: red;
             background-image: linear-gradient(0deg, #ff0000, #ffff00);
         }
+
         #grad2 {
             height: 200px;
             background-color: red;
             background-image: linear-gradient(90deg, #ff0000, #ffff00);
         }
+
         #grad3 {
             height: 200px;
             background-color: red;
             background-image: linear-gradient(180deg, #ff0000, #ffff00);
         }
+
         #grad4 {
             height: 200px;
             background-color: red;
             background-image: linear-gradient(-90deg, #ff0000, #ffff00);
         }
+        */
+        #grad1 {
+            height: 200px;
+            background-color: red;
+            background-image: linear-gradient(#ff0000, #ffff00, #008000);
+        }
+        #grad2 {
+            height: 200px;
+            background-color: red;
+            background-image: linear-gradient( #ff0000, #ffa500,#ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+        }
+        #grad3{
+            height: 200px;
+            background-color: red;
+            background-image: linear-gradient(red 10%, green 85%, blue 90%);
+        }
     </style>
 </head>
 
 <body>
+    <!-- Linear gradient - with multiple color stops -->
+    <h1>Linear Gradients - Multiple Color Stops</h1>
+    <p><strong>Note:</strong> Color stops are spaced evenly when no percents are specified.</p>
+
+    <h2>3 Color Stops (evenly spaced):</h2>
+    <div id="grad1"></div>
+
+    <h2>7 Color Stops (evenly spaced):</h2>
+    <div id="grad2"></div>
+
+    <h2>3 Color Stops (not evenly spaced):</h2>
+    <div id="grad3"></div>
     <!-- Linear gradient - with a specified angle -->
     <h1>Linear Gradients - Using Different Angles</h1>
 
