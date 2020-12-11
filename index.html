@@ -3,24 +3,39 @@
 
 <head>
     <style>
-        p.test1{
+        p.test1 {
             white-space: nowrap;
             width: 200px;
             border: 1px solid #000000;
             overflow: hidden;
             text-overflow: clip;
         }
-        p.test2{
+
+        p.test2 {
             white-space: nowrap;
             width: 200px;
             border: 1px solid #000;
             overflow: hidden;
             text-overflow: ellipsis;
         }
+        div.test{
+            white-space: nowrap;
+            width: 200px;
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+        div.test:hover{
+            overflow: visible;
+        }
     </style>
 </head>
 
 <body>
+    <!-- How to display the overflowed content when hover over the element -->
+    <p>Hover over the two divs below, to see the entire text.</p>
+    <div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+    <br>
+    <div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
     <!-- Specify how hidden, overflowed content should be signaled to the user -->
     <h1>The text-overflow Property</h1>
     <p>The following two paragraphs contains a long text that will not fit in the box.</p>
