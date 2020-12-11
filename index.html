@@ -3,21 +3,51 @@
 
 <head>
     <style>
-        h1 {
+        /* h1 {
             color: white;
             text-shadow: 1px 1px 2px black, 0 0 25px #0000FF, 0 0 5px darkblue;
         }
-        div{
+
+        div {
             width: 300px;
             height: 100px;
             padding: 15px;
             background-color: yellow;
             box-shadow: 10px 10px 5px grey;
+        } 
+        */
+        div.card{
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+        div.header{
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            font-size: 40px;
+        }
+        div.container{
+            padding: 10px;
         }
     </style>
 </head>
 
 <body>
+    <!-- Create paper-like cards (text) -->
+    <h2>Cards</h2>
+
+    <p>The box-shadow property can be used to create paper-like cards:</p>
+
+    <div class="card">
+        <div class="header">
+            <h1>1</h1>
+        </div>
+
+        <div class="container">
+            <p>January 1, 2016</p>
+        </div>
+    </div>
     <!-- Add color and blur effect to box-shadow -->
     <!-- Add color to box-shadow -->
     <!-- Add a simple box-shadow to an element -->
