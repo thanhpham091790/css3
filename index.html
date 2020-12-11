@@ -29,16 +29,34 @@
         div.test:hover {
             overflow: visible;
         } 
-        */
-        p.test{
+        p.test {
             width: 11em;
             border: 1px solid #000;
             word-wrap: break-word;
+        }
+        */
+        p.test1{
+            width: 140px;
+            border: 1px solid #000;
+            word-break: keep-all;
+        }
+        p.test2{
+            width: 140px;
+            border: 1px solid #000;
+            word-break: break-all;
         }
     </style>
 </head>
 
 <body>
+    <!-- Specify line breaking rules -->
+    <h1>The word-break Property</h1>
+
+    <p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+    <p class="test2">This paragraph contains some text. The lines will break at any character.</p>
+
+    <p><b>Note:</b> The word-break property is not supported in Opera 12 and earlier versions.</p>
     <!-- Allow long words to be able to be broken and wrap onto the next line -->
     <h1>The word-wrap Property</h1>
 
