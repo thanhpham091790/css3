@@ -16,32 +16,57 @@
             height: 300px;
             opacity: 1;
         } 
-        */
         div {
             width: 100px;
             height: 100px;
             background: red;
             transition: width 2s;
         }
-        #div1{
+
+        #div1 {
             transition-timing-function: linear;
         }
-        #div2{
+
+        #div2 {
             transition-timing-function: ease;
         }
-        #div3{
+
+        #div3 {
             transition-timing-function: ease-in;
         }
-        #div4{
+
+        #div4 {
             transition-timing-function: ease-out;
         }
-        #div5{
+
+        #div5 {
             transition-timing-function: ease-in-out;
+        }
+        */
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 3s;
+            transition-delay: 1s;
+        }
+        div:hover{
+            width: 300px;
         }
     </style>
 </head>
 
 <body>
+    <!-- Specify a delay for a transition effect -->
+    <h1>The transition-delay Property</h1>
+
+    <p>Hover over the div element below, to see the transition effect:</p>
+
+    <div></div>
+
+    <p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
     <!-- Specify different speed curves for a transition -->
     <h1>The transition-timing-function Property</h1>
 
