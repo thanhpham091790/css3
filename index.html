@@ -53,22 +53,42 @@
         div:hover {
             width: 300px;
         }
-        */
-        div{
+        div {
             width: 100px;
             height: 100px;
             background: red;
             transition: width 2s, height 2s, transform 2s;
         }
-        div:hover{
+
+        div:hover {
             width: 300px;
             height: 300px;
             transform: rotate(180deg);
+        }
+        */
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s linear 1s;
+        }
+        div:hover{
+            width: 300px;
         }
     </style>
 </head>
 
 <body>
+    <!-- Specify all transition properties in one shorthand property -->
+    <h1>Using The transition Shorthand Property</h1>
+
+    <p>Hover over the div element below, to see the transition effect:</p>
+
+    <div></div>
+
+    <p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
     <!-- Add a transformation to a transition effect -->
     <h1>Transition + Transform</h1>
 
