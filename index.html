@@ -22,7 +22,6 @@
             -ms-transform: rotate(-20deg);
             transform: rotate(-20deg);
         }
-        */
         div {
             margin: 150px;
             width: 200px;
@@ -32,10 +31,34 @@
             -ms-transform: scale(0.5, 0.5);
             transform: scale(0.5, 0.5);
         }
+        */
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        div#myDiv {
+            -ms-transform: skewX(20deg);
+            transform: skewX(20deg);
+        }
     </style>
 </head>
 
 <body>
+    <!-- skewX() - skews an element along the X-axis -->
+    <h1>The skewX() Method</h1>
+    <p>The skewX() method skews an element along the X-axis by the given angle.</p>
+
+    <div>
+        This a normal div element.
+    </div>
+
+    <div id="myDiv">
+        This div element is skewed 20 degrees along the X-axis.
+    </div>
+
     <!-- scale() - decrease an element -->
     <h1>The scale() Method</h1>
     <p>The scale() method increases or decreases the size of an element.</p>
