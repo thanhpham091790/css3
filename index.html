@@ -23,9 +23,12 @@
             z-index: 1;
             top: 105%;
             left: 0;
+            opacity: 0;
+            transition: opacity 1s;
         }
         .tooltip:hover .tooltiptext{
             visibility: visible;
+            opacity: 1;
         }
         .tooltip .tooltiptext::after{
             content: "";
@@ -41,6 +44,7 @@
 </head>
 
 <body>
+    <!-- Animation tooltip -->
     <!-- Tooltip with arrow -->
     <!-- Bottom tooltip -->
     <!-- Top tooltip -->
