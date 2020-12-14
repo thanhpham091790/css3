@@ -31,7 +31,6 @@
             -ms-transform: scale(0.5, 0.5);
             transform: scale(0.5, 0.5);
         }
-        */
         div {
             width: 300px;
             height: 100px;
@@ -43,10 +42,47 @@
             -ms-transform: skew(20deg, 10deg);
             transform: skew(20deg, 10deg);
         }
+        */
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        div#myDiv1 {
+            -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+            /* IE 9 */
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+            /* Standard syntax */
+        }
+
+        div#myDiv2 {
+            -ms-transform: matrix(1, 0, 0.5, 1, 150, 0);
+            /* IE 9 */
+            transform: matrix(1, 0, 0.5, 1, 150, 0);
+            /* Standard syntax */
+        }
     </style>
 </head>
 
 <body>
+    <!-- matrix() - rotate, scale, move, and skew an element -->
+    <h1>The matrix() Method</h1>
+    <p>The matrix() method combines all the 2D transform methods into one.</p>
+
+    <div>
+        This a normal div element.
+    </div>
+
+    <div id="myDiv1">
+        Using the matrix() method.
+    </div>
+
+    <div id="myDiv2">
+        Another use of the matrix() method.
+    </div>
+
     <!-- skew() - skews an element along the X and Y-axis -->
     <h1>The skew() Method</h1>
     <p>The skew() method skews an element into a given angle.</p>
