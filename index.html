@@ -27,10 +27,21 @@
         .tooltip:hover .tooltiptext{
             visibility: visible;
         }
+        .tooltip .tooltiptext::after{
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent black transparent;
+        }
     </style>
 </head>
 
 <body>
+    <!-- Tooltip with arrow -->
     <!-- Bottom tooltip -->
     <!-- Top tooltip -->
     <!-- Left tooltip -->
