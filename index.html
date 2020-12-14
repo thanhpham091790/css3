@@ -28,7 +28,6 @@
             75%{background-color: green;}
             100%{background-color: red;}
         }
-        */
         div {
             width: 100px;
             height: 100px;
@@ -37,8 +36,8 @@
             animation-name: example;
             animation-duration: 4s;
             animation-delay: 2s;
-            animation-iteration-count: infinite;
-            animation-direction: reverse;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
         }
 
         @keyframes example {
@@ -72,10 +71,38 @@
                 top: 0px;
             }
         }
+        */
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            font-weight: bold;
+            position: relative;
+            animation: mymove 5s infinite;
+        }
+        #div1{animation-timing-function: linear;}
+        #div2{animation-timing-function: ease;}
+        #div3{animation-timing-function: ease-in;}
+        #div4{animation-timing-function: ease-out;}
+        #div5{animation-timing-function: ease-in-out;}
+        @keyframes mymove {
+            from{left: 0px;}
+            to{left: 300px;}
+        }
     </style>
 </head>
 
 <body>
+    <!-- Speed curves for animations -->
+    <p><strong>Note:</strong> The animation-timing-funtion property is not supported in Internet Explorer 9 and earlier
+        versions.</p>
+
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+    <!-- Run animation in alternate cycles -->
     <!-- Run animation in reverse direction -->
     <!-- Run animation for ever -->
     <!-- Run animation 3 times before it stops -->
