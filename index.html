@@ -3,18 +3,42 @@
 
 <head>
     <style>
+        /* div {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            -ms-transform: translate(50px, 100px);
+            transform: translate(50px, 100px);
+        } 
+        */
         div{
             width: 300px;
             height: 100px;
             background-color: yellow;
             border: 1px solid black;
-            -ms-transform: translate(50px,100px);
-            transform: translate(50px,100px);
+        }
+        div#myDiv{
+            -ms-transform: rotate(-20deg);
+            transform: rotate(-20deg);
         }
     </style>
 </head>
 
 <body>
+    <!-- rotate() - rotate an element counter-clockwise -->
+
+    <!-- rotate() - rotate an element clockwise -->
+    <h1>The rotate() Method</h1>
+    <p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+
+    <div>
+        This a normal div element.
+    </div>
+
+    <div id="myDiv">
+        This div element is rotated clockwise 20 degrees.
+    </div>
     <!-- Translate() - move an element from its current position -->
     <h1>The translate() Method</h1>
     <p>The translate() method moves an element from its current position:</p>
