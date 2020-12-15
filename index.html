@@ -81,7 +81,7 @@
             background-color: #555555;
         }
 
-        .btn-group .button{
+        .btn-group .button {
             background-color: #4caf50;
             color: white;
             padding: 15px 32px;
@@ -93,16 +93,57 @@
             float: left;
             border: 1px solid green;
         }
-        .btn-group .button:not(:last-child){
+
+        .btn-group .button:not(:last-child) {
             border-right: none;
         }
-        .btn-group .button:hover{
+
+        .btn-group .button:hover {
             background-color: #3e8e41;
+        }
+        .a-button{
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #fff;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .a-button span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .a-button span::after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .a-button:hover span{
+            padding-right: 25px;
+        }
+        .a-button:hover span::after{
+            opacity: 1;
+            right: 0;
         }
     </style>
 </head>
 
 <body>
+    <!-- Animated Button (Hover Effect) -->
+    <h2>Animated Button</h2>
+
+    <button class="a-button" style="vertical-align:middle"><span>Hover </span></button>
     <!-- Bordered button group -->
     <!-- Button groups -->
     <h2>Button Groups</h2>
