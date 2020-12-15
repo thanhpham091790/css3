@@ -3,30 +3,35 @@
 
 <head>
     <style>
-        .flex-container{
+        .flex-container {
             display: -webkit-flex;
             display: flex;
 
             /* -webkit-flex-direction: column-reverse;
             flex-direction: column-reverse; */
 
-            -webkit-justify-content: space-between;
-            justify-content: space-between;
+            -webkit-justify-content: space-around;
+            justify-content: space-around;
+
+            -webkit-align-items: stretch;
+            align-items: stretch;
 
             width: 800px;
             height: 250px;
             background-color: lightblue;
         }
-        .flex-item{
+
+        .flex-item {
             background-color: cornflowerblue;
             width: 100px;
-            height: 100px;
             margin: 10px;
         }
     </style>
 </head>
 
 <body>
+    <!-- align-items - stretch -->
+    <!-- justify-content - space-around -->
     <!-- justify-content - space-between -->
     <!-- justify-content - center -->
     <!-- justify-content - flex-end -->
