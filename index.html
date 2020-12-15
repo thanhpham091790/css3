@@ -3,17 +3,38 @@
 
 <head>
     <style>
-        div{
+        /* div{
             border: 2px solid;
             padding: 20px;
             width: 300px;
             resize: both;
             overflow: auto;
+        } 
+        */
+        div.ex1 {
+            margin: 20px;
+            border: 1px solid black;
+            outline: 4px solid red;
+            outline-offset: 15px;
+        }
+
+        div.ex2 {
+            margin: 10px;
+            border: 1px solid black;
+            outline: 5px dashed blue;
+            outline-offset: 5px;
         }
     </style>
 </head>
 
 <body>
+    <!-- Add space between an outline and the border of an element -->
+    <h1>The outline-offset Property</h1>
+
+    <div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+    <br>
+
+    <div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
     <!-- Let a user resize both the height and width of an element -->
     <!-- Let a user resize the height of an element -->
     <!-- Let a user resize the width of an element -->
