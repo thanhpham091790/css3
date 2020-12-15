@@ -29,49 +29,81 @@
             max-width: 100%;
             height: auto;
         }
-        */
-        .container{
+        .container {
             position: relative;
         }
-        .topleft{
+
+        .topleft {
             position: absolute;
             top: 0;
             left: 0;
             font-size: 18px;
         }
-        .topright{
+
+        .topright {
             position: absolute;
             top: 0;
             right: 0;
             font-size: 18px;
         }
-        .bottomleft{
+
+        .bottomleft {
             position: absolute;
             bottom: 0;
             left: 0;
             font-size: 18px;
         }
-        .bottomright{
+
+        .bottomright {
             position: absolute;
             bottom: 0;
             right: 0;
             font-size: 18px;
         }
-        .centered{
+
+        .centered {
             position: absolute;
             top: 50%;
             left: 50%;
             font-size: 18px;
         }
-        img{
+
+        img {
             width: 100%;
             height: auto;
             opacity: 0.3;
+        }
+        */
+        div.polaroid{
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+        }
+        div.container{
+            text-align: center;
+            padding: 10px 20px;
         }
     </style>
 </head>
 
 <body>
+    <!-- Polaroid images -->
+    <h2>Responsive Polaroid Images / Cards</h2>
+
+    <div class="polaroid">
+        <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="5 Terre" style="width:100%">
+        <div class="container">
+            <p>Cinque Terre</p>
+        </div>
+    </div>
+
+    <div class="polaroid">
+        <img src="https://www.w3schools.com/css/lights600x400.jpg" alt="Norther Lights" style="width:100%">
+        <div class="container">
+            <p>Northern Lights</p>
+        </div>
+    </div>
     <!-- Image text (top left, top right, bottom left, bottom right corner) -->
     <h2>Image Text</h2>
 
