@@ -8,7 +8,7 @@
             display: flex;
 
             /* -webkit-flex-direction: column-reverse;
-            flex-direction: column-reverse; */
+            flex-direction: column-reverse; 
 
             -webkit-justify-content: space-around;
             justify-content: space-around;
@@ -18,6 +18,7 @@
 
             -webkit-flex-wrap: wrap-reverse;
             flex-wrap: wrap-reverse;
+            */
 
             -webkit-align-content: center;
             align-content: center;
@@ -33,10 +34,15 @@
             height: 100px;
             margin: 10px;
         }
+        .first{
+            -webkit-order: -1;
+            order: -1;
+        }
     </style>
 </head>
 
 <body>
+    <!-- Order the flex items -->
     <!-- align-content - center -->
     <!-- flex-wrap - wrap-reverse -->
     <!-- flex-wrap - wrap -->
@@ -56,7 +62,7 @@
     <!-- Flexbox with three flex items -->
     <div class="flex-container">
         <div class="flex-item">flex item 1</div>
-        <div class="flex-item">flex item 2</div>
+        <div class="flex-item first">flex item 2</div>
         <div class="flex-item">flex item 3</div>
     </div>
 </body>
