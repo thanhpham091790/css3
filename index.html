@@ -25,15 +25,57 @@
         img:hover {
             box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
         }
-        */
-        img{
+        img {
             max-width: 100%;
             height: auto;
+        }
+        */
+        .container{
+            position: relative;
+        }
+        .topleft{
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 18px;
+        }
+        .topright{
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 18px;
+        }
+        .bottomleft{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-size: 18px;
+        }
+        .bottomright{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 18px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
         }
     </style>
 </head>
 
 <body>
+    <!-- Image text (top left, top right, bottom left, bottom right corner) -->
+    <h2>Image Text</h2>
+
+    <div class="container">
+        <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300">
+        <div class="topleft">Top Left</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="topright">Top Right</div>
+        <div class="bottomright">Bottom Right</div>
+    </div>
     <!-- Responsive image -->
     <h2>Responsive Images</h2>
     <p>Responsive images will automatically adjust to fit the size of the screen.</p>
