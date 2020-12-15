@@ -16,7 +16,10 @@
             -webkit-align-items: center;
             align-items: baseline;
 
-            width: 800px;
+            -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+
+            width: 300px;
             height: 250px;
             background-color: lightblue;
         }
@@ -24,12 +27,14 @@
         .flex-item {
             background-color: cornflowerblue;
             width: 100px;
+            height: 100px;
             margin: 10px;
         }
     </style>
 </head>
 
 <body>
+    <!-- flex-wrap - nowwrap -->
     <!-- align-items - baseline -->
     <!-- align-items - center -->
     <!-- align-items - flex-end -->
