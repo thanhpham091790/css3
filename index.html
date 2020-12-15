@@ -3,12 +3,13 @@
 
 <head>
     <style>
-        body{
-            direction: rtl;
-        }
         .flex-container{
             display: -webkit-flex;
             display: flex;
+
+            -webkit-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+
             width: 400px;
             height: 250px;
             background-color: lightblue;
@@ -23,6 +24,7 @@
 </head>
 
 <body>
+    <!-- flex-direction - row-reverse -->
     <!-- Flexbox with three flex items -->
     <div class="flex-container">
         <div class="flex-item">flex item 1</div>
