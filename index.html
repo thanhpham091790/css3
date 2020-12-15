@@ -18,10 +18,10 @@
 
             -webkit-flex-wrap: wrap-reverse;
             flex-wrap: wrap-reverse;
-            */
 
             -webkit-align-content: center;
             align-content: center;
+            */
 
             width: 800px;
             height: 250px;
@@ -30,9 +30,19 @@
 
         .flex-item {
             background-color: cornflowerblue;
-            width: 100px;
-            height: 100px;
-            margin: auto;
+            margin: 10px;
+        }
+        .item1{
+            -webkit-flex: 2;
+            flex: 2;
+        }
+        .item2{
+            -webkit-flex: 1;
+            flex: 1;
+        }
+        .item3{
+            -webkit-flex: 1;
+            flex: 1;
         }
         /*
         .flex-item:first-child{
@@ -46,6 +56,7 @@
 </head>
 
 <body>
+    <!-- Specify the length of the flex item, relative to the rest of the flex items -->
     <!-- Margin:auto; = perfect centering -->
     <!-- Margin-right:auto; -->
     <!-- Order the flex items -->
@@ -67,9 +78,9 @@
     <!-- flex-direction - row-reverse -->
     <!-- Flexbox with three flex items -->
     <div class="flex-container">
-        <div class="flex-item">flex item 1</div>
-        <div class="flex-item first">flex item 2</div>
-        <div class="flex-item">flex item 3</div>
+        <div class="flex-item item1">flex item 1</div>
+        <div class="flex-item item2">flex item 2</div>
+        <div class="flex-item item3">flex item 3</div>
     </div>
 </body>
 
