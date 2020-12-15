@@ -3,10 +3,11 @@
 
 <head>
     <style>
-        .pagination{
+        .pagination {
             display: inline-block;
         }
-        .pagination a{
+
+        .pagination a {
             color: black;
             float: left;
             padding: 8px 16px;
@@ -16,26 +17,34 @@
             margin: 0 4px;
             font-size: 22px;
         }
-        .pagination a.active{
+
+        .pagination a.active {
             background-color: #4caf50;
             border: 1px solid #4caf50;
             color: white;
         }
-        .pagination a:hover:not(.active){
+
+        .pagination a:hover:not(.active) {
             background-color: #ddd;
         }
-        .pagination a:first-child{
+
+        .pagination a:first-child {
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
         }
-        .pagination a:last-child{
+
+        .pagination a:last-child {
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
+        }
+        .center{
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
+    <!-- Centered pagination -->
     <!-- Pagination size -->
     <!-- Pagination with space between links -->
     <!-- Rounded bordered pagination -->
@@ -45,16 +54,17 @@
     <!-- Active and hoverable pagination -->
     <!-- Simple pagination -->
     <h2>Simple Pagination</h2>
-
-    <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a href="#">1</a>
-        <a href="#" class="active">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
+    <div class="center">
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
     </div>
 </body>
 
