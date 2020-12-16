@@ -115,48 +115,67 @@
                 font-size: 30px;
             }
         }
-        */
-        *{
+        * {
             box-sizing: border-box;
         }
-        body{
+
+        body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
-        .header{
+
+        .header {
             text-align: center;
             padding: 32px;
         }
-        .row{
+
+        .row {
             display: flex;
             flex-wrap: wrap;
             padding: 0 4px;
         }
-        .column{
+
+        .column {
             flex: 25%;
             max-width: 25%;
             padding: 0px 4px;
         }
-        .column img{
+
+        .column img {
             margin-top: 8px;
             vertical-align: middle;
         }
-        @media screen and (max-width: 800px){
-            .column{
+
+        @media screen and (max-width: 800px) {
+            .column {
                 flex: 50%;
                 max-width: 50%;
             }
         }
-        @media screen and (max-width: 600px){
-            .column{
+
+        @media screen and (max-width: 600px) {
+            .column {
                 flex: 100%;
                 max-width: 100%;
+            }
+        }
+        */
+        body{
+            background-color: lightblue;
+        }
+        @media only screen and (orientation:landscape){
+            body{
+                background-color: lightcoral;
             }
         }
     </style>
 </head>
 
 <body>
+    <!-- Change layout of a page depending on the orientation of the browser -->
+    <p>Resize the browser window. When the width of this document is larger than the height, the background color is
+        "lightblue", otherwise it is "lightgreen".</p>
+    <!-- Responsive website -->
     <!-- Responsive image gallery -->
     <!-- Header -->
     <div class="header">
